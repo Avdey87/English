@@ -55,29 +55,65 @@ the standards of Linux distributions, some of which have release cycles of just
  
  1. Which of the following is not required in order for software to be certified
 as open source?
+C The open source definition specifies that users should be able to distribute
+changes, but it doesn’t require that users distribute the software under the
+terms of the same license. Thus option C does not describe an open source
+requirement, and so it is the correct answer. Options A, B, D, and E all
+paraphrase actual open source license term requirements.
 
 2. Which is true of Linux distributions as a whole?
+B Some distributions (particularly Enterprise versions that are sold for money)
+include software that is neither open source nor even freely redistributable, so
+option B is correct. Distributions as a whole use many licenses, not just one, so
+option A is incorrect. The MIT license is one of several open source licenses;
+such software is not an impediment to copying a distribution, so option C is
+incorrect. Although some distributions, such as Debian, aim to make their
+main systems fully open source compliant, not all do this, so option D is
+incorrect. Likewise, not all distributions are composed completely of free
+software as the FSF uses the term.
 
 3. Which of the following is a key part of the FSF’s philosophy?
+E Option E paraphrases one of the four key points in the FSF’s philosophy, and
+so it is correct. Contrary to option A, the FSF’s philosophy does not mandate
+the use of the GPL, much less its most recent version, although the GPL is the
+FSF’s preferred license. Option B is contrary to the FSF’s position, which is
+that free software should remain free; however, this option is compatible with
+the OSI’s philosophy. Although the FSF advocates free software and free OSs,
+option C is not an explicit part of their philosophy and so is incorrect. Although
+the FSF wants to see a world dominated by free software, they do not advocate
+software piracy, so option D is incorrect.
 
 4. True or false: Copyright law governs the distribution of software in most
 countries.
+True Courts and laws explicitly recognize computer software as being creative
+works that are governed by copyright law. In some countries, patent laws also
+apply to software, although this is not globally true.
 
 5. True or false: The FSF’s free software definition and the OSI’s 10 principles
 of open source software both require that users have the ability to examine
 a program’s workings—that is, its source code.
+True This principle is at the heart of both the free software and the open
+source software definitions.
 
 6. True or false: Because their hardware designs are proprietary, hardware
 vendors cannot release open source drivers for their products.
+False Hardware vendors often do release open source drivers for their
+products. One caveat is that the release of open source drivers necessarily
+render some programming interfaces for the hardware open, which some
+hardware vendors are reluctant to do.
 
 7. A license created by the FSF and often used for libraries is the___________.
+LGPL (or Lesser GPL, or Lesser General Public License)
 
 8. An organization devoted to promoting open source–like principles in fields
 such as video and audio recordings is the ___________.
+Creative Commons
 
 9. The FSF’s general principles are summarized by the term ___________,
 which refers to using copyright laws for purposes that are in some ways
 contrary to copyright’s original intent.
+copyleft
 
 10. Users can motivate programmers to work on open source projects by
 offering a(n) ___________ to whomever completes the project first.
+bounty
