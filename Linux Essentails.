@@ -1,0 +1,52 @@
+Chaper 1 
+
+1. Which of the following is not a function of the Linux kernel?
+C GUI programs create menus with the help of a library that’s designed for this
+purpose; this is not a function of the Linux kernel. Thus option C is a
+nonkernel function, and it is correct. The kernel allocates memory and CPU
+time, and it also controls access to disk and network hardware, so options A, B,
+D, and E all describe kernel functions and are incorrect.
+
+2. Which of the following is an example of an embedded Linux OS?
+  A Android is used on smartphones, tablet computers, and other small portable
+devices. As such, it qualifies as an embedded OS, making option A correct.
+SUSE, CentOS, Debian, and Fedora are all examples of distributions intended
+mainly for use on desktop, laptop, and server computers; these do not qualify
+as embedded OSs, so options B, C, D, and E are all incorrect.
+
+3. Which of the following is a notable difference between Linux and Mac OS X?
+  B Linux’s GUI is based on the X Window System. Although OS X provides an
+X implementation, its primary GUI is Apple’s proprietary product. Thus option
+B is correct. Option A is incorrect because both Linux and OS X can run most
+GNU programs. Option C is incorrect because Linux can run on both Apple
+Macintosh and commodity PC hardware. Option D is incorrect because OS X
+includes many BSD utilities in its standard form. Furthermore, most Linux
+distributions use GNU utilities rather than their BSD equivalents, although you
+can use BSD utilities in Linux if you prefer. Option E is incorrect because both
+Linux and OS X support text-mode commands, although OS X makes it hard to
+use these commands in anything but its GUI Terminal application.
+
+4. True or false: The Linux kernel is derived from the BSD kernel.
+  False The Linux kernel was intended as a “from-scratch” project to create a
+new Unix-like kernel. Although there are influences and similarities, the two
+kernels are largely independent of each other.
+
+5. True or false: If you log in to a Linux system in graphical mode, you cannot use text-mode commands in that session.
+  False Programs known as terminals enable entry of text-mode commands
+after you’ve logged into Linux in GUI mode. You can also switch between
+multiple virtual terminals by using keystrokes such as Ctrl+Alt+F2.
+
+6. True or false: CentOS is a Linux distribution with a long release cycle.
+  True CentOS’s release cycle is approximately every two years, which is long by
+the standards of Linux distributions, some of which have release cycles of just
+6 months.
+7. A Linux text-mode login prompt reads ___________ (one word).
+  login:
+
+8. A common security problem with Windows that’s essentially nonexistent on Linux is ___________.
+  viruses
+  
+9. Prerelease software that’s likely to contain bugs is known as ___________ and ___________.
+  alpha and beta
+10. Linux distributions that have no version number but instead releaseupgrades in an ongoing manner are said to have a(n) ___________ release cycle.
+  rolling
