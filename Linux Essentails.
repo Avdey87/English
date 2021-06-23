@@ -121,28 +121,105 @@ bounty
 CHAPTER 3
 
 1. What type of multitasking does Linux use?
+  A Linux’s multitasking is preemptive, meaning that the kernel can give CPU
+time to any process as it sees fit, potentially interrupting (or preempting) other
+processes. Thus option A is correct. Linux is a multiuser OS, but multiuser is
+not a type of multitasking, so option B is incorrect. In a cooperative
+multitasking OS, applications must voluntarily give up CPU time to each other.
+Although Linux programs can signal the OS that they don’t need CPU time,
+Linux doesn’t rely exclusively on this method, so option C is incorrect. A
+single-tasking OS can run just one process at a time, so option D is incorrect. A
+single-user OS can support just one user at a time. Such OSs can be either
+single tasking or multitasking, and in the latter case, could use either
+cooperative or preemptive multitasking. Thus option E is incorrect.
 
 2. Which of the following is a characteristic of all open source software?
+  C The open source definition includes 10 points, one of which is that users may
+modify the original code and redistribute the altered version. Thus option C is
+correct. Although, as a practical matter, all open source software is available at
+no charge, nothing in the open source definition forbids selling it. In practice,
+many organizations and individuals do sell open source software, either as a
+convenience (such as DVD-ROMs with Linux distributions for those with slow
+Internet connections) or in value-added arrangements (such as Red Hat
+Enterprise Linux, which bundles open source software with a support
+contract). Thus option A is incorrect. The open source definition requires
+distribution of source code, but does not require distribution of binaries. Thus
+option B is incorrect. Although some open source software, including the Linux
+kernel, began life in academia, this is not true of all open source software, so
+option D is incorrect. The open source definition does not specify that either an
+interpreted or a compiled language be used, and in fact both have been used to
+write open source software, so option E is incorrect.
 
 3. Which of the following programs is most likely to be installed and
 regularly used on a desktop computer that runs Linux?
+  D Evolution is an email reader program. Such programs are common on
+desktop computers, so option D is correct. Apache is a web server, Postfix is an
+email server, and the Berkeley Internet Name Domain (BIND) is a Domain
+Name System (DNS) server. Such servers are much less likely to be installed on
+desktop computers than are client programs such as Evolution, so options A,
+B, and E are all incorrect. Android is the name of a Linux distribution for
+smartphones and tablets, so option C is incorrect.
 
 4. True or false: VMS was a common OS on x86 PCs at the time Linux was
 created.
+  False VMS was an OS for minicomputers and mainframes when Linux was
+created. On x86 computers, DOS was the dominant OS in 1991.
 
 5. True or false: Some DVRs run Linux.
+  True Digital video recorders (DVRs) are specialized computers for recording
+TV shows. Some commercial DVRs, such as TiVos, run Linux natively. DVR
+software for standard PCs, such as MythTV, which runs under Linux, also
+exists.
 
 6. True or false: A Linux computer being used as a server generally does not
 require X.
+  True Most server programs do not require the X Window System (X) GUI, so
+server computer administrators often disable X or even remove it entirely to
+save disk space and memory and to minimize the risk of security problems.
 
 7. Linux uses a(n) ___________ kernel design, as contrasted with a
 microkernel design.
+  monolithic
 
 8. A type of software that's distributed for free but that requires payment on
 the honor system if a person uses it is called ___________.
+  shareware
 
 9. A(n) ___________ computer is likely to run a word processor and web
 browser.
+  desktop
 
 10. The ___________ software package is an example of a web server
 written for the Linux server environment.
+  Apache
+  
+CHAPTER 4 
+
+1. Which of the following are Linux desktop environments? (Select all that
+apply.)
+
+2. If you want to enable one Linux computer to access files stored on another
+Linux computer’s hard disk, which of the following network protocols is
+the best choice?
+
+3. In which of the following languages was most of the Linux kernel written?
+
+4. True or false: OpenOffice.org forked from Calligra.
+
+5. True or false: Malicious outsiders can disrupt servers even if the computer
+that runs them is never broken into.
+
+6. True or false: Python is generally implemented as an interpreted language.
+
+7. Thunderbird is a(n) program. (Specify the general category of the
+software.)
+
+8. A Linux server that handles the SMB/CIFS protocol normally runs the
+software.
+
+9. A program written in a(n) programming language is completely converted
+to binary form before being run.
+
+10. You can install and manage various Linux software applications via a(n)
+management system.
+
