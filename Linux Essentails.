@@ -197,29 +197,69 @@ CHAPTER 4
 
 1. Which of the following are Linux desktop environments? (Select all that
 apply.)
+  B, C, E GNOME, KDE, and Xfce are all Linux desktop environments, so
+options B, C, and E are all correct. (Others include LXDE and Unity.) The
+GIMP Toolkit (GTK+) is a GUI programming library. Although GNOME and
+Xfce are both built atop GTK+, it’s not a desktop environment, so option A is
+incorrect. Evolution is a Linux email client, not a desktop environment, so
+option D is incorrect.
 
 2. If you want to enable one Linux computer to access files stored on another
 Linux computer’s hard disk, which of the following network protocols is
 the best choice?
+  B The Network File System (NFS) was designed for exactly the task described
+in the question, so option B is correct. The Simple Mail Transfer Protocol
+(SMTP) enables one computer to send email messages to another computer, so
+it’s a poor choice for achieving the stated goal and option A is incorrect. The
+PHP: Hypertext Processor (PHP) language is used to generate dynamic
+content for web pages, so option C is incorrect. The Domain Name System
+(DNS) is a protocol for delivering the mappings between hostnames and IP
+addresses to computers, so it won’t easily achieve the stated goals, making
+option D incorrect. The Dynamic Host Configuration Protocol (DHCP) enables
+one computer to provide network configuration information to another one
+over a network link, so option E is incorrect.
 
 3. In which of the following languages was most of the Linux kernel written?
+  C The main language for the Linux kernel is C, so option C is correct. Although
+Bash shell scripts control much of the Linux startup process, these scripts are
+not part of the kernel, so option A is incorrect. Java is a popular language for
+web-based applications, but it’s not used in the Linux kernel, so option B is
+incorrect. C++ is a derivative of C that adds object-oriented features to the
+language, but the Linux kernel uses regular C, not C++, so option D is
+incorrect. Perl is a popular interpreted language, particularly for tasks that
+involve processing text, but it’s not the language of the Linux kernel, so option
+E is incorrect.
 
 4. True or false: OpenOffice.org forked from Calligra.
+  False LibreOffice forked from the pre-Apache version of OpenOffice.org in
+2011. Calligra split from the KOffice office suite, which is no longer
+maintained.
 
 5. True or false: Malicious outsiders can disrupt servers even if the computer
 that runs them is never broken into.
+  True A denial-of-service (DoS) attack can disrupt a server’s operation by
+directing an overwhelming quantity of bogus data at the server program, or
+even just the computer on which it runs. This is true even if the server is
+impeccably managed.
 
 6. True or false: Python is generally implemented as an interpreted language.
+  True Python, like Perl, PHP, and shell languages, is interpreted. This contrasts
+with C and C++, which are two common compiled languages, and with Java,
+which is somewhere in-between
 
 7. Thunderbird is a(n) program. (Specify the general category of the
 software.)
+  email client
 
 8. A Linux server that handles the SMB/CIFS protocol normally runs the
 software.
+  Samba
 
 9. A program written in a(n) programming language is completely converted
 to binary form before being run.
+  compiled
 
 10. You can install and manage various Linux software applications via a(n)
 management system.
+  Package
 
