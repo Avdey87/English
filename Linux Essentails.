@@ -268,25 +268,102 @@ CHAPTER 5
 
 1. Which of the following commands provides the most information about
 your motherboard’s features?
+  D The lspci command displays information on PCI devices. Since many
+motherboard features appear to Linux as PCI devices, option D provides a
+great deal of information on your motherboard, and so it is correct. Option A’s
+lscpu command provides information on the CPU, which means that it
+provides little direct information on the motherboard, so option A is incorrect.
+The Xorg program is the Linux X server, and option B creates a new X
+configuration file. This file might provide hints about video hardware on the
+motherboard, but option D provides better and more information, so option B
+is incorrect. The fdisk utility can partition a disk, and the command in option
+C displays information on how /dev/sda is partitioned. This information has
+nothing to do with the motherboard’s features, though, so option C is
+incorrect. You can enter http://localhost:631 in a web browser to configure
+your printer, but even if you do this, you’ll gain no information about your
+motherboard’s features, so option E is incorrect.
 
 2. Why might you want to partition a hard disk? (Select all that apply.)
+  A, D Disk partitioning enables you to separate data of different types into
+different parts of a disk. Examples of reasons to do this include installing
+multiple OSs and separating filesystem data from swap space. Thus options A
+and D are both correct. Filesystem choice (ext4fs vs. ReiserFS) has nothing to
+do with partitioning, unless you want to use one filesystem for one partition
+and the other on another partition, so option B is incorrect. The Parallel
+Advanced Technology Attachment (PATA) and Serial ATA (SATA) interfaces
+are hardware standards; you can’t turn a PATA disk into an SATA disk by
+partitioning the disk, so option C is incorrect. Hard disks have caches to
+improve performance, but partitioning the disk does not separate the disk’s
+cache from the bulk of the disk’s data, so option E is incorrect
 
 3. Which of the following devices is not commonly attached via USB?
+  A Video monitors normally attach to the video circuitry built into a computer’s
+motherboard or to a separate video card, so option A is correct. Keyboards,
+external hard disks, printers, and scanners all commonly connect to a
+computer via USB, although alternative interfaces exist for all of these devices.
 
 4. True or false: An Intel 64 CPU is capable of running a Linux distribution
 identified as being for the AMD64 CPU.
+  True Most CPU families have multiple names. EM64T is one name that Intel
+has used for its implementation of the x86-64 architecture, and AMD64 is one
+of AMD’s names for the same architecture. Thus the two names identify the
+same architecture, and an AMD64 Linux distribution will run on an EM64T
+CPU.
 
 5. True or false: UDF is a good filesystem to use for a Linux installation on a
 hard disk.
+  False The Universal Disk Format (UDF) is a filesystem that’s used primarily
+on optical discs, not on hard disks. Using it for a Linux installation on a hard
+disk would be awkward or impossible. Linux-specific filesystems (ext2fs,
+ext3fs, ext4fs, ReiserFS, JFS, XFS, and Btrfs) are the only practical choices for
+Linux installations on a hard disk.
 
 6. True or false: The Linux kernel includes drivers for various disk
 controllers, network adapters, and USB interfaces, among other things.
+  True In Linux, most drivers, including those specified, are provided as part of
+the kernel. Some other drivers, such as those for video cards under X, printers,
+and scanners, exist outside the kernel, although these may also rely on kernel
+drivers to do their work.
 
 7. The x86 CPU uses a(n) __-bit architecture.
+  32
 
 8. A computer power supply converts electricity from alternating current to __________________.
+  direct current
 
 9. The _________ standard is a modern video interface that’s commonly
 used on computer monitors.
+  Digital Visual Interface (DVI)
 
 10. A piece of software that “talks” to hardware is known as a(n) _________.
+  driver
+  
+CHAPTER 6 
+
+1. What keystroke moves the cursor to the start of the line when typing a
+command in Bash?
+
+2. How can you run a program in the background when launching it from a
+shell? (Select all that apply.)
+
+3. Which of the following commands is an improved version of more?
+
+4. True or false: Pressing Alt+F2 in the GUI brings up a text-mode display
+that you can use to log in to Linux.
+
+5. True or false: You can force man to display a man page in a specific section of
+the manual by preceding the search name with the section number, as in
+man 5 passwd.
+
+6. True or false: info pages are a web-based documentation format.
+
+7. True or false: Linux documentation in the /usr/share/doc directory tree is
+almost always in OpenDocument text format.
+
+8. Type logout or ______________ to end a text-mode terminal session.
+
+9. Each document in an info page is known as a(n) ______________.
+
+10. The ______________ command searches a database of filenames,
+enabling you to identify files quickly whose names match a term that you
+specify.
