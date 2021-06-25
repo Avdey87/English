@@ -342,28 +342,102 @@ CHAPTER 6
 
 1. What keystroke moves the cursor to the start of the line when typing a
 command in Bash?
+  A The Ctrl+A keystroke moves the cursor to the start of the line when editing a
+command in Bash, so option A is correct. The left-arrow key moves a single
+character to the left, Ctrl+T transposes two characters, the up arrow moves up
+one item in the history, and Ctrl+E moves to the end of the line.
 
 2. How can you run a program in the background when launching it from a
 shell? (Select all that apply.)
+  C, D Options C and D describe ways to run a program in the background from
+a shell, so options C and D are both correct. Neither start nor bg is a command
+that launches a program in the background. The fg command returns a
+program to the foreground, meaning that the shell will go back to sleep, which
+isn’t what the question specifies.
 
 3. Which of the following commands is an improved version of more?
+  D The less program, like more, displays a text file a page at a time. The less
+utility also includes the ability to page backward in the text file, search its
+contents, and do other things that more can’t do. Thus option D is correct. The
+grep command searches a file for a specified string, so it doesn’t do a task that’s
+similar to more, and option A is incorrect. The Hypertext Markup Language
+(HTML) is a file format, often indicated with the filename extension .html,
+that’s commonly used on the Web. As such, it’s not a better version of more, so
+option B is incorrect. The cat command can concatenate two or more files, or
+display a single file on the screen. In the former capacity, cat doesn’t do the
+task of more, and in the latter capacity, cat is less capable than more. Thus
+option C is incorrect. The man command displays Linux manual pages.
+Although man uses less by default, man is not itself an improved version of
+more, so option E is incorrect.
 
 4. True or false: Pressing Alt+F2 in the GUI brings up a text-mode display
 that you can use to log in to Linux.
+  False When in X, Ctrl must be added to the VT-switching keystroke, so the
+correct keystroke should be Ctrl+Alt+F2 (or other function keys, through F6).
 
 5. True or false: You can force man to display a man page in a specific section of
 the manual by preceding the search name with the section number, as in
 man 5 passwd.
+  True When you want to override man’s search order, you specify the desired
+manual section between man and the command name, filename, or other name
+on which you’re searching.
 
 6. True or false: info pages are a web-based documentation format.
+  False Although info pages, like web pages, use hyperlinks to tie related
+documents together, the two systems use different formats and protocols. info
+pages also reside on the computer’s hard disk; they require no Internet access
+to read. For these reasons, info pages are not web-based.
 
 7. True or false: Linux documentation in the /usr/share/doc directory tree is
 almost always in OpenDocument text format.
+  False Individual program authors decide on a documentation file format
+based on their own specific needs and preferences. Although some documents
+are in OpenDocument Text format, many documents are not.
 
 8. Type logout or ______________ to end a text-mode terminal session.
+  exit
 
 9. Each document in an info page is known as a(n) ______________.
+  node
 
 10. The ______________ command searches a database of filenames,
 enabling you to identify files quickly whose names match a term that you
 specify.
+  locate
+  
+CHAPTER 7 
+
+1. Which of the following commands would you type to rename newfile.txt
+to afile.txt?
+
+2. You want to copy a directory, MyFiles, to a USB flash drive that uses the
+FAT filesystem. The contents of MyFiles are as follows:
+
+  The USB flash drive is mounted at /media/usb, and so you type cp -a
+  MyFiles/ /media/usb. What problem will occur when you attempt to copy
+
+3. You type mkdir one/two/three and receive an error message that reads, in
+part, No such file or directory. What can you do to overcome this
+problem? (Select all that apply.)
+
+4. True or false: You can create a symbolic link from one low-level filesystem
+to another.
+
+5. True or false: You can easily damage your Linux installation by mistyping
+an rm command when you log into your regular account.
+
+6. True or false: You can set a directory’s time stamps with the touch
+command.
+
+7. You want to copy a file (origfile.txt) to the backups directory, but if a file
+called origfile.txt exists in the backups directory, you want to go ahead
+with the copy only if the file in the source location is newer than the one in
+backups. The command to do this is cp ____ origfile.txt backups/.
+
+8. You’ve typed rmdir junk to delete the junk directory, but this command
+has failed because junk contains word processing files. What command
+might you type to do the job?
+
+9. Which wildcard character matches any one symbol in a filename?
+
+10. What directory primarily contains system configuration files?
