@@ -409,35 +409,120 @@ CHAPTER 7
 
 1. Which of the following commands would you type to rename newfile.txt
 to afile.txt?
+  A The mv command moves or renames a file, so option A is correct. The cp
+command copies a file, so option B is incorrect. The ln command creates a link
+between two files, so option C is incorrect. Option D’s rn command is fictitious,
+so this option is incorrect. The touch command creates a new file or adjusts the
+time stamps on an existing file, so option E is incorrect.
 
 2. You want to copy a directory, MyFiles, to a USB flash drive that uses the
 FAT filesystem. The contents of MyFiles are as follows:
 
   The USB flash drive is mounted at /media/usb, and so you type cp -a
   MyFiles/ /media/usb. What problem will occur when you attempt to copy
+  
+  C Because two files (outline.pdf and Outline.PDF) have names that differ only
+in case, and because FAT is a case-insensitive filesystem, one of those files will
+be missing on the copy. (Both files will be copied, but the second one copied
+will overwrite the first.) Thus option C is correct. The specified cp command
+does not create links, so option A is incorrect. Because the specified cp
+command included the -a option, which performs a recursive copy, all of the
+files in MyFiles will be copied, along with the directory itself, so option B is
+incorrect. In order to copy all of the files, you will have to change one file’s
+name manually; however, cp won’t do this automatically, so option D is
+incorrect. Because option C is correct, option E is not correct.
 
 3. You type mkdir one/two/three and receive an error message that reads, in
 part, No such file or directory. What can you do to overcome this
 problem? (Select all that apply.)
 
+A, B If you try to create a directory inside a directory that doesn’t exist, mkdir
+responds with a No such file or directory error. The –parents parameter
+tells mkdir to create all necessary parent directories automatically in such
+situations, so option A is correct. You can also manually do this by creating
+each necessary directory separately, so option B is also correct. (It’s possible
+that mkdir one wouldn’t be necessary in this example if the directory one
+already existed. No harm will come from trying to create a directory that
+already exists, although mkdir will return a File exists error.) Option C will
+have no useful effect; at most, it will change the time stamps on the mkdir
+program file, but if you type it as a normal user, it probably won’t even do that.
+Options D and E are both based on the premise that you must remove
+directories that already exist with the names that you want to use, but this isn’t
+true, so these options are both incorrect.
+
 4. True or false: You can create a symbolic link from one low-level filesystem
 to another.
+
+True Symbolic links work by storing the name of the linked-to file in the
+symbolic link file. Linux reads this filename and transparently substitutes the
+linked-to file. This process works both on a single filesystem and across
+filesystems, so the statement is true. Hard links, by contrast, work by providing
+multiple directory entries that point to a single file. This method of creating a
+link does not work across low-level filesystems.
 
 5. True or false: You can easily damage your Linux installation by mistyping
 an rm command when you log into your regular account.
 
+  False Linux’s security features prevent accidental damage when you work as
+an ordinary user. You must be more careful when you acquire root privileges
+to perform system maintenance, though.
+
 6. True or false: You can set a directory’s time stamps with the touch
 command.
+  True The touch command updates a file’s time stamps, and for this purpose, a
+directory counts as a file, so this statement is true.
 
 7. You want to copy a file (origfile.txt) to the backups directory, but if a file
 called origfile.txt exists in the backups directory, you want to go ahead
 with the copy only if the file in the source location is newer than the one in
 backups. The command to do this is cp ____ origfile.txt backups/.
+-u or —update
 
 8. You’ve typed rmdir junk to delete the junk directory, but this command
 has failed because junk contains word processing files. What command
 might you type to do the job?
 
+rm -R junk, rm -r junk, or rm --recursive junk
+
 9. Which wildcard character matches any one symbol in a filename?
+  ?
 
 10. What directory primarily contains system configuration files?
+  /etc
+  
+CHAPTER 8
+
+1. Which of the following commands will print lines from the file world.txt
+that contain matches to changes and changed?
+
+2. Which of the following redirection operators appends a program’s
+standard output to an existing file without overwriting that file’s original
+contents?
+
+3. You’ve received a tar archive called data79.tar from a colleague, but you
+want to check the names of the files it contains before extracting them.
+Which of the following commands would you use to do this?
+
+4. True or false: The regular expression Linu[^x].*lds matches the string
+Linus Torvalds.
+
+5. True or false: The find command enables you to locate files based on their
+sizes.
+
+6. True or false: To compress files archived with zip, you must use an
+external compression program such as gzip or bzip2 in a pipeline with zip.
+
+7. The character that represents the start of a line in a regular expression is
+_____________.
+
+
+8. The _____________ command can extract specified data fields from a
+file’s records.
+
+9. Complete the following command to redirect both standard output and a
+standard error from the bigprog program to the file out.txt.
+$_____ bigprog out.txt
+
+10. The gzip, bzip2, and xz programs all perform _____________
+compression, in which the uncompressed data exactly matches the original
+precompression data.
