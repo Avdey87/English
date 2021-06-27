@@ -494,35 +494,101 @@ CHAPTER 8
 
 1. Which of the following commands will print lines from the file world.txt
 that contain matches to changes and changed?
+   A	The	grep	utility	finds	matching	text	within	a	file	and	prints	those	lines.	It
+accepts	regular	expressions,	which	means	that	you	can	place	in	brackets	the
+two	characters	that	differ	in	the	words	for	which	you’re	looking.	Option	A
+shows	the	correct	syntax	for	doing	this.	The	tar	utility	creates	or	manipulates
+archive	files,	and	option	B’s	syntax	is	incorrect	for	any	use	of	tar,	so	that
+option	is	incorrect.	The	find	utility	locates	files	based	on	filenames,	file	sizes,
+and	other	surface	features.	Furthermore,	options	C	and	E	both	present
+incorrect	syntax	for	find,	and	so	are	incorrect.	Option	D’s	cat	utility	displays	
 
 2. Which of the following redirection operators appends a program’s
 standard output to an existing file without overwriting that file’s original
 contents?
+   E	The	>>	operator	appends	standard	output	to	a	file,	so	option	E	is	correct.	The
+vertical	bar	(|)	is	the	pipe	character;	it	ties	one	program’s	standard	output	to
+another’s	standard	input,	so	option	A	is	incorrect.	The	2>	operator	redirects
+standard	error,	not	standard	output,	and	it	overwrites	the	target	file.	Thus
+option	B	is	incorrect.	The	&>	operator	redirects	both	standard	output	and
+standard	error,	and	it	overwrites	the	target	file,	so	option	C	is	incorrect.	The	>
+operator	redirects	standard	output,	but	it	overwrites	the	target	file,	so	option	D
+is	incorrect.
 
 3. You’ve received a tar archive called data79.tar from a colleague, but you
 want to check the names of the files it contains before extracting them.
 Which of the following commands would you use to do this?
+   D	With	the	tar	utility,	the	—list	(t)	command	is	used	to	read	the	archive	and
+display	its	contents.	The	—verbose	(v)	option	creates	a	verbose	file	listing,	and
+—file	(f)	specifies	the	filename—data79.tar	in	this	case.	Option	D	uses	all	of
+these	features,	and	therefore	does	as	the	question	specifies.	Options	A,	B,	C,
+and	E	all	substitute	other	commands	for	—list,	which	is	required	by	the
+question,	so	all	of	these	options	are	incorrect.
+
 
 4. True or false: The regular expression Linu[^x].*lds matches the string
 Linus Torvalds.
+  True	The	special	characters	[^x]	match	any	single	character	except	x,	and	.*
+matches	any	sequence	of	any	characters.	The	string	Linus	Torvalds	is	just	one
+of	many	strings	to	match	the	specified	regular	expression.
 
 5. True or false: The find command enables you to locate files based on their
 sizes.
+  True	You	can	use	the	-size	n	option	in	the	find	command	to	locate	files	based
+on	their	sizes.
 
 6. True or false: To compress files archived with zip, you must use an
 external compression program such as gzip or bzip2 in a pipeline with zip.
+  False	The	zip	utility	creates	or	manipulates	zip	archive	files.	This	file	type
+supports	compression	directly,	as	does	the	zip	program.	Thus	there’s	no	need
+to	involve	another	compression	program	to	compress	files	archived	with	zip.
 
 7. The character that represents the start of a line in a regular expression is
 _____________.
-
+  ^
 
 8. The _____________ command can extract specified data fields from a
 file’s records.
+  cut
 
 9. Complete the following command to redirect both standard output and a
 standard error from the bigprog program to the file out.txt.
-$_____ bigprog out.txt
+$_____ bigprog out.txt  
+ &>
 
 10. The gzip, bzip2, and xz programs all perform _____________
 compression, in which the uncompressed data exactly matches the original
 precompression data.
+  lossless
+  
+CHAPTER 9
+
+1.	 Which	of	the	following	tools	is	best	suited	to	installing	a	software	package
+and	all	of	its	dependencies	on	a	Debian	computer?
+
+2.	 What	is	the	usual	name	of	the	first	process	that	the	Linux	kernel	runs,
+aside	from	itself?
+
+3.	 Where	do	most	log	files	reside	on	a	Linux	computer?
+
+4.	 True	or	false:	When	using	suitable	commands,	you	can	install	a	program
+and	be	sure	that	all	of	the	software	on	which	it	depends	will	also	be
+installed,	provided	you	have	an	Internet	connection.
+
+5.	 True	or	false:	By	default,	the	first	process	listed	in	top	is	currently
+consuming	the	most	CPU	time.
+
+6.	 True	or	false:	The	dmesg	command	may	produce	different	output	after	a
+computer	has	been	running	for	weeks	than	when	it	first	started.
+
+7.	 Most	Linux	distributions	maintain	information	on	what	packages	are
+installed	in	the	___________	___________.	(Two	words.)
+
+8.	 You’re	using	bash,	and	you	type	emacs	to	launch	the	emacs	editor.	In	this
+case,	emacs	is	bash’s	____________.
+
+9.	 General	system	messages	are	likely	to	be	found	in	/var/log/messages	or
+/var/log/________________	,	depending	on	your	distribution.
+
+10.	 The	command	that	you	use	to	read	messages	generated	during	the	boot
+process	and	stored	in	the	kernel	ring	buffer	is	the	_________	command.
