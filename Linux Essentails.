@@ -565,30 +565,96 @@ CHAPTER 9
 
 1.	 Which	of	the	following	tools	is	best	suited	to	installing	a	software	package
 and	all	of	its	dependencies	on	a	Debian	computer?
+  E The apt-get utility is a network-enabled tool that can resolve dependencies
+and retrieve all of the required packages to install a package that you specify.
+Debian and its derivatives all use it, so option E is correct. The yum and zypper
+programs are conceptually similar to apt-get, but they work on Red Hat (and
+its derivatives) and SUSE distributions, respectively, so options A and B are
+both incorrect. The dmesg program displays the kernel ring buffer; it has
+nothing to do with package management, so option C is incorrect. The rpm
+program is a non-network-enabled program for managing packages on an
+RPM-based system, not on a Debian system, so option D is incorrect.
 
 2.	 What	is	the	usual	name	of	the	first	process	that	the	Linux	kernel	runs,
 aside	from	itself?
+  A Typically, Linux starts init as the first process, so option A is correct. bash is
+a Linux text-mode shell program. Although it’s important for user interaction,
+it’s far from the first process Linux starts. The cron daemon manages timed
+execution of programs to handle routine maintenance tasks. It’s started
+automatically in the boot process, but it’s not the first process the kernel starts,
+so option C is incorrect. Although the login process is critical to logging in
+users in text mode, it’s started by init or by another process, so option D is
+incorrect. The Grand Unified Bootloader (GRUB) boots the computer, so parts
+of GRUB run before the kernel. Several Linux programs help manage a GRUB
+installation, but the kernel doesn’t start any of them automatically. Thus
+option E is incorrect.
 
 3.	 Where	do	most	log	files	reside	on	a	Linux	computer?
+  A Option A, /var/log, is the standard home for log files in Linux. Options B
+through E all present fictitious locations and so are all incorrect.
 
 4.	 True	or	false:	When	using	suitable	commands,	you	can	install	a	program
 and	be	sure	that	all	of	the	software	on	which	it	depends	will	also	be
 installed,	provided	you	have	an	Internet	connection.
+  True Network-enabled package managers, such as APT, yum, zypper, and
+urpmi, can automatically download and install dependent packages for a main
+package.
 
 5.	 True	or	false:	By	default,	the	first	process	listed	in	top	is	currently
 consuming	the	most	CPU	time.
+  True The top program sorts a process list by CPU use, so the topmost item in
+the list is currently consuming the most CPU time. You can change the sort
+order in various ways, though.
 
 6.	 True	or	false:	The	dmesg	command	may	produce	different	output	after	a
 computer	has	been	running	for	weeks	than	when	it	first	started.
+  True Like on-disk log files, the kernel ring buffer (which dmesg displays)
+changes as the computer runs. Thus its contents immediately after booting are
+not likely to be the same as its contents after the computer has been running
+for weeks.
 
 7.	 Most	Linux	distributions	maintain	information	on	what	packages	are
 installed	in	the	___________	___________.	(Two	words.)
+  package database
 
 8.	 You’re	using	bash,	and	you	type	emacs	to	launch	the	emacs	editor.	In	this
 case,	emacs	is	bash’s	____________.
+  child
 
 9.	 General	system	messages	are	likely	to	be	found	in	/var/log/messages	or
 /var/log/________________	,	depending	on	your	distribution.
+  syslog
 
 10.	 The	command	that	you	use	to	read	messages	generated	during	the	boot
 process	and	stored	in	the	kernel	ring	buffer	is	the	_________	command.
+  dmesg
+  
+CHAPTER 10 
+
+1. For which type of file is nano least likely to be useful for examining or
+editing?
+
+2. Which keystrokes invoke the pico or nano search function? (Select all that
+apply.)
+
+3. How would you remove two lines of text from a file when using vi?
+
+4. True or false: Unicode is useful for encoding most European languages but
+not Asian languages.
+
+5. True or false: GUI text editors for ASCII are superior to text-mode ASCII
+text editors because the GUI editors support underlining, italics, and
+multiple fonts.
+
+6. True or false: If you have never used a text editor before, the nano text
+editor is usually the best one to learn first.
+
+7. ASCII supports _______ unique characters (not including control
+characters).
+
+8. Three keystrokes that can initiate a search-and-replace operation in nano
+are F14, _______, and _______.
+
+9. While in vi’s command mode, you can type _______ to undo a change.
+
+10. To save a file and exit the vi text editor in command mode, type _______.
