@@ -768,31 +768,99 @@ script?
 CHAPTER 12 
 
 1. What is the purpose of the system account with a UID of 0?
+  A UID 0 is reserved for the system administrator’s account, also known as
+root, so option A is correct. The first ordinary user account is not a system
+account, and its UID is normally 500 or 1000, depending on the distribution,
+so option B is incorrect. Because A is correct, C cannot be correct. The
+association of UID 0 for administrative tasks is basic in Linux, so you won’t
+find variation on this score, making option D incorrect. Option E describes the
+nobody account, which does not have a UID of 0.
 
 2. What type of information will you find in /etc/passwd for ordinary user
 accounts? (Select all that apply.)
+  A, C, E The /etc/passwd file’s fields specify the username, an encrypted
+password (or x to denote use of shadow passwords, which is more common), a
+UID number (option A), a single default GID number, a comment field that
+normally holds the user’s full name, the path to the account’s home directory
+(option C), and the path to the account’s default text-mode shell (option E).
+Option B is incorrect because, although /etc/passwd includes the user’s default
+group, the user may belong to additional groups that are defined elsewhere.
+Option D is incorrect because the user’s default desktop environment is
+defined in the user’s home directory, not in /etc/password.
 
 3. You want to run the command cat /etc/shadow as root, but you’re logged
 in as an ordinary user. Which of the following commands will do the job,
 assuming that the system is configured to give you root access via the
 appropriate command?
+  A The sudo command is the usual way to execute a single command as root,
+and option A gives the correct syntax to use it as the question specifies. There
+is no standard root command, so option B is incorrect. The passwd command
+changes passwords, so option C is incorrect. Although you can use su to
+execute a single command as root, you must use it with the -c option to do
+this, as in su -c "cat /etc/shadow", so option D is incorrect. Option E’s admin
+is a fictitious command, so this option is incorrect.
 
 4. True or false: whoami provides more information than id.
-
+  False The whoami command displays your username only. The id command
+displays your username, your UID number, your primary group name, your
+primary GID number, and the group names and GID numbers of all your
+groups.
+  
 5. True or false: Linux stores information on its groups in the /etc/groups
 file.
+  False The name for the group data file in Linux is /etc/group, not /etc/groups.
 
 6. True or false: As a general rule, you should employ extra care when
 running programs as root.
+  True It’s possible to do more damage to a computer as root than as an
+ordinary user. Thus you should be extra cautious when using root—run only
+trusted programs, double-check your commands for errors, and so on.
 
 7. The file that associates usernames with UID numbers in Linux is
 _______________. (Provide the complete path to the file.)
+  /etc/passwd
 
 8. To learn who is currently logged into the computer and what programs
 they’re currently running, you can type _______.
+  w
 
 9. UIDs below 500 or 1,000 (depending on the distribution) are reserved for
 use by ___________ accounts.
+  system
 
 10. A(n) ___________ environment means that a person cannot deny
 actions, and the sudo command helps establish this environment.
+  nonrepudiation
+  
+CHAPTER 13
+
+1. What would a Linux system administrator type to remove the nemo account
+and its home directory?
+
+2. Of the following, which is the best password?
+
+3. Describe the effect of the following command, assuming that it completes
+successfully:
+
+4. True or false: User accounts have higher UID numbers than do system
+accounts.
+
+5. True or false: Command-line users should normally use usermod to change
+their passwords.
+
+6. True or false: After deleting an account, files formerly owned by the
+deleted account may remain on the computer.
+
+7. You want to create an account for a new user, using the username theo and
+giving the user a UID of 1926. The command to do this is useradd _______.
+
+8. You want to change the username of a user from e1211 to emilyn, without
+altering anything else about the account. To do so, you would type
+__________.
+
+9. To create a system group, you must pass the ____ option to groupadd.
+
+10. Information on various groups, such as group name, GID, and group
+members is stored in the _____________ file. (The answer should be an
+absolute file reference.)
+
