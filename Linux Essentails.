@@ -836,31 +836,105 @@ CHAPTER 13
 
 1. What would a Linux system administrator type to remove the nemo account
 and its home directory?
+  C The userdel command deletes an account, and the -r option to userdel
+causes it to delete the user’s home directory and mail spool, thus satisfying the
+terms of the question. Option A deletes the account but leaves the user’s home
+directory intact. Option B does the same; the -f option forces account deletion
+and file removal under some circumstances, but it’s meaningful only when -r
+is also used. Option D’s command will probably have no effect, since rm works
+on directories only in conjunction with -r, and /home/nemo is probably the
+user’s home directory. Option E’s rm command deletes the user’s home
+directory (assuming that it’s located in the conventional place, given the
+username), but it doesn’t delete the user’s account.
 
 2. Of the following, which is the best password?
+  B The password in option B uses a combination of upper- and lowercase
+letters, numbers, and symbols, and it doesn’t contain any obvious word.
+Furthermore, it’s a long password. All of these characteristics make it unlikely
+to appear in an intruder’s password dictionary and make it hard to guess. Thus
+option B represents a good password, and the best of those shown. Option A is
+the name of a well-known celebrity (at least in the Linux world!); such a name
+is likely to appear in password-cracking dictionaries, and so it makes a poor
+password choice. Option C is an extremely common password, which makes it
+a bad choice. Furthermore, it’s short and it consists of just one symbol type
+(digits). Option D is another popular (and therefore very poor) password. It’s a
+single common word in all lowercase, and it contains no numbers or other
+nonalphabetic symbols. Although option E is fairly long, it consists entirely of
+lowercase letters, and it’s three related words, making it a poor password.
 
 3. Describe the effect of the following command, assuming that it completes
 successfully:
+  A The groupadd command creates a new group, as described in option A, so
+that option is correct. To add a user to a group, as suggested by option B, you
+would use the usermod utility. No standard command imports group
+information from a file, as option C suggests, so this option is incorrect. (Some
+network user management tools do provide such functionality, though.) To
+change a user’s default group or list of supplemental groups, you would use
+usermod, so options D and E are both incorrect.
 
 4. True or false: User accounts have higher UID numbers than do system
 accounts.
+  True System accounts have UID values between 0 and some number
+(normally 499 or 999), whereas user accounts have UID values above that
+number (starting at 500 or 1000, typically).
 
 5. True or false: Command-line users should normally use usermod to change
 their passwords.
-
+  False The usual command-line command for changing passwords is passwd.
+  
 6. True or false: After deleting an account, files formerly owned by the
 deleted account may remain on the computer.
+  True Although the userdel command’s -r option deletes the user’s home
+directory and mail files, this command doesn’t track down the user’s files
+stored in more-exotic locations. You can use find to locate such files if you
+want to delete them or transfer ownership to another user.
 
 7. You want to create an account for a new user, using the username theo and
 giving the user a UID of 1926. The command to do this is useradd _______.
+  -u 1926 theo
 
 8. You want to change the username of a user from e1211 to emilyn, without
 altering anything else about the account. To do so, you would type
 __________.
+  usermod -l emilyn e1211
 
 9. To create a system group, you must pass the ____ option to groupadd.
+  -r or —system
 
 10. Information on various groups, such as group name, GID, and group
 members is stored in the _____________ file. (The answer should be an
 absolute file reference.)
+  /etc/group
+  
+CHAPTER 14 
+
+1. What command would you type (as root) to change the ownership of
+somefile .txt from ralph to tony?
+
+2. Typing ls -ld wonderjaye reveals a symbolic file mode of drwxr-xr-x.
+Which of the following are true? (Select all that apply.)
+
+3. Which of the following commands can you use to change a file’s group?
+
+4. True or false: A file with permissions of 755 can be read by any user on the
+computer, assuming that all users can read the directory in which it
+resides.
+
+5. True or false: Only root may use the chmod command.
+
+6. True or false: Only root may change a file’s ownership with chown.
+
+7. What option causes chown to change ownership on an entire directory tree?
+
+8. What three-character symbolic string represents read and execute
+permission but no write permission?
+
+9. What symbolic representation can you pass to chmod to give all users
+execute access to a file without affecting other permissions?
+
+10. You want to set the sticky bit on an existing directory, subdir, without
+otherwise altering its permissions. To do so, you would type chmod
+________ subdir.
+
+
 
